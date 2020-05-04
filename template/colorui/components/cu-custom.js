@@ -19,6 +19,10 @@ Component({
       type: [Boolean, String],
       default: false
     },
+    isLeftCustom:{
+      type: [Boolean, String],
+      default: false
+    },
     isBack: {
       type: [Boolean, String],
       default: false
@@ -49,6 +53,12 @@ Component({
       wx.reLaunch({
         url: '/pages/index/index',
       })
-    }
+    },
+    chinese: {
+
+    },
+    english: {
+
+    },
   }
 })
