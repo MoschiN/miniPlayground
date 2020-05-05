@@ -1,6 +1,6 @@
 Page({
   data: {
-    PageCur: 'home_main'
+    PageCur: 'main'
   },
   NavChange(e) {
     this.setData({

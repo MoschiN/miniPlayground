@@ -1,16 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/home/home",
-    "pages/tabbarIndex/tabbarIndex",
-    "pages/result/result",
     "pages/Main/home_main",
     "pages/Personal/personal",
-    "pages/Others/others",
-    "pages/Question/home_question/home_question",
-    "pages/Question/result_question/result_question",
-    "pages/Question/index_question/index_question"
-  ],
+    "pages/Others/others"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -23,3 +16,5 @@
   },
   "sitemapLocation": "sitemap.json"
 }
+
+
