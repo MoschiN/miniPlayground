@@ -18,27 +18,27 @@ checkBox:[{
     checked: false
   }],
   checkBox1: [{
-    value: 0,
+    value: 10,
     detail: '体育',
     checked: false
   },
   {
-    value: 1,
+    value: 11,
     detail: '地理',
     checked: false
   },
     {
-      value: 2,
+      value: 12,
       detail: '化学',
       checked: false
     },
     {
-      value: 3,
+      value: 13,
       detail: '生物',
       checked: false
     },
     {
-      value: 4,
+      value: 14,
       detail: '语文',
       checked: false
     }],
@@ -62,6 +62,7 @@ methods:{
   ChooseCheckbox(e) {
     let items = this.data.checkBox;
     let values = e.currentTarget.dataset.target.value;
+    console.log("测试中VALUE" + values)
     for (let i = 0, lenI = items.length; i < lenI; ++i) {
       if (items[i].value == values) {
         items[i].checked = !items[i].checked;
@@ -70,6 +71,20 @@ methods:{
     }
      this.setData({
        checkBox: items
+    })
+  },
+  ChooseCheckbox1(e) {
+    let items = this.data.checkBox1;
+    let values = e.currentTarget.dataset.target.value;
+    console.log("测试中VALUE" + values)
+    for (let i = 0, lenI = items.length; i < lenI; ++i) {
+      if (items[i].value == values) {
+        items[i].checked = !items[i].checked;
+        break
+      }
+    }
+    this.setData({
+      checkBox1: items
     })
   }
 }

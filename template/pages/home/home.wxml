@@ -41,7 +41,7 @@
 </view>
  <view class="cu-list menu {{'card-menu margin-top'}}">
  <view wx:for="{{checkBox1}}" wx:key="{{value}}" class="cu-item {{item.checked?'check':''}}">
-      <view class="content" bindtap="ChooseCheckbox" data-target="{{item}}">
+      <view class="content" bindtap="ChooseCheckbox1" data-target="{{item}}">
         <text class="cuIcon-circlefill text-grey"></text>
         <text class="text-grey">{{item.detail}}</text>
       </view>
@@ -54,7 +54,7 @@
 </view>
  <view class="cu-list menu {{'card-menu margin-top'}}">
  <view wx:for="{{checkBox1}}" wx:key="{{value}}" class="cu-item {{item.checked?'check':''}}">
-      <view class="content" bindtap="ChooseCheckbox" data-target="{{item}}">
+      <view class="content" bindtap="ChooseCheckbox1" data-target="{{item}}">
         <text class="cuIcon-circlefill text-grey"></text>
         <text class="text-grey">{{item.detail}}</text>
       </view>
