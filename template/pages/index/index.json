@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "main": "/pages/Main/home_main",
+    "others": "/pages/Others/others",
+    "personal": "/pages/Personal/personal",
+  }
 }

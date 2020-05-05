@@ -3,7 +3,7 @@
 const app = getApp()
 Page({
   data: {
-  PageCur: 'home'
+    PageCur: 'home'
   },
   NavChange(e) {
     this.setData({
