@@ -14,7 +14,18 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  }
 }
 
 
