@@ -1,1 +1,2 @@
-/* pages/Main/home_main.wxss */
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";

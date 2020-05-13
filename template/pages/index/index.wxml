@@ -6,7 +6,7 @@
     <view class='cuIcon-cu-image'>
      <text class="cuIcon-deliver lg {{PageCur=='main'?'text-green':'text-gray'}}"></text>
     </view>
-    <view class="{{PageCur=='main'?'text-green':'text-gray'}}">首页</view>
+    <view class="{{PageCur=='main'?'text-green':'text-gray'}}">组队</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="others">
     <view class='cuIcon-cu-image'>

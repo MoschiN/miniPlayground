@@ -1,9 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/Main/home_main",
-    "pages/Personal/personal",
-    "pages/Others/others"],
+    "pages/main/home_main",
+    "pages/others/others",
+    "pages/personal/personal",
+    "pages/question/index_question/index_question",
+    "pages/question/home_question/home_question",
+    "pages/question/result_question/result_question"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -27,5 +31,3 @@
     }
   }
 }
-
-

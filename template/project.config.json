@@ -8,11 +8,10 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true,
-		"autoAudits": false
+		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.2",
+	"libVersion": "2.6.4",
 	"appid": "wx357495ec095e0adb",
 	"projectname": "ColorUI-template-Question",
 	"debugOptions": {
