@@ -1,12 +1,10 @@
-   <map
-      id="myMap"
-      style="width: 100%; height: 100vh;"
-      latitude="41.316123"
-      longitude="116.63177"
-      subkey="RGJBZ-JA6WS-HIFOW-62DQR-QBNFT-RHBWK"
-      show-location
-       >
-  </map>
+
   
-   
-   
+<button bindtap="nearby_search">搜索周边KFC</button>
+<!--地图容器-->
+<map id="myMap"
+   markers="{{markers}}"
+   style="width:100%;height:300px;"
+   longitude="116.313972"
+   latitude="39.980014" scale='16'>
+</map>
