@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/question/index/index_question",
+    "pages/home/index_home",
+    "pages/other/index_other"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "云开发",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

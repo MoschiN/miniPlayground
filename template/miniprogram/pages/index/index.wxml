@@ -1,0 +1,23 @@
+<home wx:if="{{PageCur=='home'}}"></home>
+<other wx:if="{{PageCur=='other'}}"></other>
+<question wx:if="{{PageCur=='question'}}"></question>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="home">
+    <view class='cuIcon-cu-image'>
+     <text class="cuIcon-deliver lg {{PageCur=='home'?'text-green':'text-gray'}}"></text>
+    </view>
+    <view class="{{PageCur=='home'?'text-green':'text-gray'}}">组队</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="question">
+    <view class='cuIcon-cu-image'>
+        <text class="cuIcon-explore lg {{PageCur=='question'?'text-green':'text-gray'}}"></text>
+    </view>
+    <view class="{{PageCur=='question'?'text-green':'text-gray'}}">问卷</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="other">
+    <view class='cuIcon-cu-image'>
+      <text class="cuIcon-my lg {{PageCur=='other'?'text-green':'text-gray'}}"></text>
+    </view>
+    <view class="{{PageCur=='other'?'text-green':'text-gray'}}">我的</view>
+  </view>
+</view>

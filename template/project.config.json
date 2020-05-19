@@ -1,23 +1,17 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"enhance": true
 	},
-	"compileType": "miniprogram",
-	"libVersion": "2.6.4",
 	"appid": "wx357495ec095e0adb",
-	"projectname": "ColorUI-template-Question",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
+	"projectname": "miniprogram-Cloud",
+	"libVersion": "2.8.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -29,13 +23,22 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide"
+				}
+			]
 		}
 	}
 }
