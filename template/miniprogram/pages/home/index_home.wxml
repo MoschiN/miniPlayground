@@ -1,0 +1,18 @@
+<map id="myMap" 
+longitude="116.23128" 
+latitude="40.22077"
+scale="14"  
+show-location 
+style="width: 100%; height: 100vh;">
+<!-- <cover-view class='btn' bindtap='codeg'>
+  <cover-image src='../img/扫码.png' class='code'></cover-image>
+    <cover-view class='text'>立即购买</cover-view>
+  </cover-view>
+  <cover-view class='ten' bindtap='gps'>
+  <cover-image src='../img/定位.png' class='ten_l'></cover-image> -->
+  <view class="flex  margin-tb-xl padding-bottom-xs justify-start ">
+   <view class="cu-avatar round lg margin-left" wx:for="{{4}}" wx:key style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big1000{{index+1}}.jpg);">
+    <view class="cu-tag badge {{index%2==0?'cuIcon-female bg-pink':'cuIcon-male bg-blue'}}"></view>
+  </view> </view>
+</map>
+
