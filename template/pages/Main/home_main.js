@@ -2,20 +2,8 @@ var QQMapWX = require('../../utils/qqmap-wx-jssdk.js')
 var qqmapsdk = new QQMapWX({
   key: 'RGJBZ-JA6WS-HIFOW-62DQR-QBNFT-RHBWK' // 必填
 });
-wx.cloud.init
-const db = wx.cloud.database()
-// 2. 构造查询语句  环境ID　　demo-19ikn
-// collection 方法获取一个集合的引用
-// where 方法传入一个对象，数据库返回集合中字段等于指定值的 JSON 文档。API 也支持高级的查询条件（比如大于、小于、in 等），具体见文档查看支持列表
-// get 方法会触发网络请求，往数据库取数据
-db.collection('question_List').where({
 
-}).get({
-  success: function (res) {
-    // 输出 [{ "title": "The Catcher in the Rye", ... }]
-    console.log(res)
-  }
-})
+
 Page({
 
   /**
