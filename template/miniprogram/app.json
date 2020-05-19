@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/question/index/index_question",
     "pages/home/index_home",
-    "pages/other/index_other"
+    "pages/other/index_other",
+    "pages/question/tabbar_question/tabbarIndex",
+    "pages/question/result_question/result",
+    "pages/question/home_question/home"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

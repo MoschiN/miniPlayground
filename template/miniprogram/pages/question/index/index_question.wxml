@@ -1,18 +1,15 @@
-<!--index.wxml-->
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">问卷调查</view>
+</cu-custom>
 <view class="container">
-
-  <!-- 用户 openid -->
   <view class="userinfo">
-    <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
-      size="default"
-    ></button>
-    <view class="userinfo-nickname-wrapper">
-      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
-    </view>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="cu-btn round bg-green shadow"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" mode="cover"></image>    
+    </block>
   </view>
-
+  <text class="cuIcon-title text-white margin-top:20rpx">{{userInfo.nickName}}</text>
+  <view class="padding flex flex-direction">
+<button class="cu-btn bg-red margin-tb-sm lg" bindtap="bindViewTap">点击进入答题</button>
+  </view>
 </view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "home": "/pages/question/home_question/home",
+    "result": "/pages/question/result_question/result"
+  }
+}
+
