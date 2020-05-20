@@ -7,7 +7,7 @@
     <text class='cuIcon-titles text-orange '></text> 问题1：您的性别是：
   </view>
   <view class="action">
-      <button class="cu-btn.ny bg-green " bindtap="showModal" data-target="menuModal">Language</button>
+      <button class="cur-button.ny bg-green" size="mini" bindtap="showModal" data-target="menuModal">Language</button>
     </view>
 </view>
   <view class="cu-modal {{modalName=='menuModal'?'show':''}}" bindtap="hideModal">
