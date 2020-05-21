@@ -56,8 +56,61 @@ Component({
       badge: 0,
       name: '版权'
     }],
+    questList: [{
+      icon: 'appreciate',
+      color: 'red',
+      badge: 120,
+      name: 'Appreciate'
+    }, {
+      icon: 'emoji',
+      color: 'orange',
+      badge: 1,
+      name: 'emoji'
+    }, {
+      icon: 'taxi',
+      color: 'yellow',
+      badge: 0,
+      name: 'taxi'
+    }, {
+      icon: 'warn',
+      color: 'olive',
+      badge: 22,
+      name: 'warn'
+    }, {
+      icon: 'discover',
+      color: 'cyan',
+      badge: 0,
+      name: 'discover'
+    }, {
+      icon: 'clothesfill',
+      color: 'blue',
+      badge: 0,
+      name: '皮肤'
+    }, {
+      icon: 'discoverfill',
+      color: 'purple',
+      badge: 0,
+      name: '发现'
+    }, {
+      icon: 'questionfill',
+      color: 'mauve',
+      badge: 0,
+      name: '帮助'
+    }, {
+      icon: 'commandfill',
+      color: 'purple',
+      badge: 0,
+      name: '问答'
+    }, {
+      icon: 'brandfill',
+      color: 'mauve',
+      badge: 0,
+      name: '版权'
+    }],
     gridCol: 3,
-    skin: false },
+    questionCol: 4,
+    skin: false 
+    },
   attached() {
     console.log("success")
     let that = this;
@@ -89,6 +142,11 @@ Component({
     wx.hideLoading()
   },
   methods: {
+    isCard(e) {
+      this.setData({
+        isCard: e.detail.value
+      })
+    },
     showModal(e) {
       this.setData({
         modalName: e.currentTarget.dataset.target
