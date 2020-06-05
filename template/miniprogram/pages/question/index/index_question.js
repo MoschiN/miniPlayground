@@ -11,12 +11,6 @@ Page({
     btnText:'点击进入答题',
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../question/tabbar_question/tabbarIndex'
-    })
-  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -52,5 +46,29 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onGetOpenid: function () {
+    // 调用云函数
+    wx.cloud.callFunction({
+      name: 'login',
+      data: {},
+      success: res => {
+        console.log('[云函数] [login] user openid: ', res.result.openid)
+        app.globalData.openid = res.result.openid
+        wx.navigateTo({
+          url: '../question/tabbar_question/tabbarIndex'
+        })
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+        wx.showToast({
+          title: '调用失败！',
+          icon: 'none',
+          duration: 1500
+        })
+      }
+    })
   }
 })
+
+

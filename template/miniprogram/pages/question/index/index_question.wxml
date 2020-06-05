@@ -10,6 +10,6 @@
   </view>
   <text class="cuIcon-title text-white margin-top:20rpx">{{userInfo.nickName}}</text>
   <view class="padding flex flex-direction">
-<button class="cu-btn bg-red margin-tb-sm lg" bindtap="bindViewTap">{{btnText}}</button>
+<button class="cu-btn bg-red margin-tb-sm lg" bindtap="onGetOpenid">{{btnText}}</button>
   </view>
 </view>
